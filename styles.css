@@ -1,5 +1,174 @@
+*, * ::before, * ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+:root {
+
+        --primary-color: #0a61ae;
+        --primary-color-100: #e2f8ff;
+        --primary-color-400: #61dafb;
+        --primary-color-800: #0a61ae;
+        --secondary-color: #ffda4b;
+        --secondary-color-100: #fffbe6;;
+        --secondary-color-800: #8b6f00;
+        --base: #555;
+        --base-100: #f1f1f1;
+        --base-400: #555;
+        --base-800: #000;
+
+
+
+        --font-light: 300;
+        --font-medium: 400;
+        --font-bold: 700;
+
+        --font-size-xxs: 0.625rem;
+        --font-size-xs: 0.75rem;
+        --font-size-sm: 0.875rem;
+        --font-size-md: 1rem;
+        --font-size-lg: 1.125rem;
+        --font-size-xl: 1.25rem;
+        --font-size-xxl: 1.5rem;
+        --font-size-xxxl: 2rem;
+
+        --border-radius: 0.25rem;
+        --border-radius-sm: 0.125rem;
+        --border-radius-lg: 0.5rem;
+        --border-radius-xxl: 1rem;
+        --border-radius-xxxl: 2rem;
+        --border-radius-circle: 50%;
+}
+
 body {
         font-family: "Open Sans", serif;
         font-optical-sizing: auto;
         font-style: normal;
+        font-size: var(--font-size-xl);
+}
+
+a {
+        text-decoration: none;
+        color: var(--primary-color);
+        &:hover {
+                color: var(--secondary-color);
+                text-decoration: underline;
+        }
+}
+
+header {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding: 10px 0 10px 0;
+        max-width: 1440px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        .logo-holder {
+            display: flex;
+            padding: 10px;
+            align-items: center;
+            font-weight: 600;
+            color: var(--base-800);
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-xxl);
+            background-color: var(--base-800);
+            color: var(--base-100);
+            height: 64px;
+            width: 64px;
+            margin-right: 20px;
+            border-radius: var(--border-radius-circle);
+        }
+
+        .logo-text{
+            flex: 1;
+
+        }
+    }
+         
+}
+
+nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        max-width: 1440px;
+        margin: auto;
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 5px;
+            /* padding: 0;
+            margin: 0; */
+
+            li {
+                display: inline-block;
+                /* margin-right: 20px;
+                font-size: var(--font-size-lg);
+                font-weight: var(--font-medium);
+                color: var(--base-800); */
+
+                a {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    color: var(--base);
+                    &:hover {
+                        color: var(--base-800);
+                        background-color: var(--base-100);
+                        border-radius: var(--border-radius);
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .mobile-toggle {
+            display: none;
+            color: var(--base-800);
+            padding: 10px;
+
+        }
+}
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        }
+
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        ul {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            a {
+                width: 100%;
+            }
+            &.active {
+                display: flex;
+            }
+        }
+        .mobile-toggle {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    }
 }
