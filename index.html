@@ -22,10 +22,15 @@
 
       <nav>
         <ul id="menu">
-          <li><a href="#" class="button">Home</a></li>
-          <li><a href="#" class="button">Skills</a></li>
-          <li><a href="#" class="button">Projects</a></li>
-          <li><a href="#" class="button">Contact Me</a></li>
+          <li><a href="#" class="button btn">Home</a></li>
+          <li><a href="#skills" class="button btn">Skills</a></li>
+          <li><a href="#projects" class="button btn">Projects</a></li>
+          <li><a href="#chat-bot" class="button btn bot">Chat Bot</a></li>
+          <li>
+            <a href="mailto:choganyasha7@gmail.com" class="button"
+              >Contact Me</a
+            >
+          </li>
         </ul>
         <a
           href="#"
@@ -68,8 +73,12 @@
               >
             </p>
             <div class="call-to-action">
-              <a href="#" class="button black"> View Resume </a>
-              <a href="#" class="button white"> Contact Me </a>
+              <a href="./julius-choga-resume-2025.pdf" class="button black">
+                View Resume
+              </a>
+              <a href="mailto:choganyasha7@gmail.com" class="button white">
+                Contact Me
+              </a>
             </div>
             <div class="social-links">
               <a href="#">
@@ -90,7 +99,7 @@
           />
         </div>
       </section>
-      <section class="container logos">
+      <section class="logos container">
         <div class="marquee">
           <div class="track">
             <img src="./images/html.png" alt="HTML" width="128" />
@@ -113,7 +122,7 @@
         </div>
       </section>
 
-      <section class="skills container">
+      <section id="skills" class="skills container">
         <h2>
           <small>About Me</small>
           Skills
@@ -224,7 +233,7 @@
         </div>
       </section>
 
-      <section class="bento container">
+      <section id="projects" class="bento container">
         <h2>
           <small>Recent</small>
           Completed Projects
@@ -257,6 +266,53 @@
           >
             <img src="./images/home.png" alt="Home" width="100%" />
           </a>
+        </div>
+      </section>
+
+      <section id="chat-bot" class="chatbot container">
+        <h2>
+          <small>Talk to me</small>
+        </h2>
+        <div class="chatbot-blue">
+          <div class="chat-info">
+            <h3>Azure AI Chatbot</h3>
+            <p>
+              I've put together a chatbot that can help answer some questions
+              you might have about me.
+            </p>
+            <p>
+              You can also download my resume here if you want to take a look at
+              it.
+            </p>
+            <a href="./julius-choga-resume-2025.pdf" class="button black"
+              >Download Resume</a
+            >
+          </div>
+          <div class="chat-box">
+            <div class="scroll-area">
+              <ul class="chat-log">
+                <li>
+                  <span class="avatar">AI</span>
+                  <div class="message">
+                    Hi! I'm a friendly chatbot. How can I help you today?
+                  </div>
+                </li>
+                <li>
+                  <span class="user">User</span>
+                  <div class="message">
+                    I would like to know more about Julius's projects.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="chat-message">
+              <input
+                type="text"
+                placeholder="Hey Julius what skills are you best at?"
+              />
+              <button class="button black">Send</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
