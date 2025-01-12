@@ -16,7 +16,7 @@
         --base: #555;
         --base-100: #f1f1f1;
         --base-400: #555;
-        --base-800: #000;
+        --base-800: #384047;
         --white-color: #fff;
         --black-color: #000;
 
@@ -219,13 +219,13 @@ h1 {
 .hero {
     display: flex;
     margin-top: 30px;
-    color: var(--white-color);
+    color: var(--base-800);
     .hero-blue {
         display: flex;
         flex-direction: column;
         justify-content: center;
         flex: 1;
-        background-color: var(--secondary-color);
+        background-color: var(--secondary-color-100);
         border-radius: var(--border-radius-xxxl);
         padding: 30px;
         .call-to-action {
