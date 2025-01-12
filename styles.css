@@ -6,12 +6,12 @@
 
 :root {
 
-        --primary-color: #0a61ae;
-        --primary-color-100: #e2f8ff;
-        --primary-color-400: #61dafb;
+        --primary-color: #0983ed;
+        --primary-color-100: #0b89c318;
+        --primary-color-400: #5FCF80;
         --primary-color-800: #0a61ae;
-        --secondary-color: #ffda4b;
-        --secondary-color-100: #fffbe6;;
+        --secondary-color: #0a6cbd;
+        --secondary-color-100: #0b89c318;;
         --secondary-color-800: #8b6f00;
         --base: #555;
         --base-100: #f1f1f1;
@@ -219,12 +219,13 @@ h1 {
 .hero {
     display: flex;
     margin-top: 30px;
+    color: var(--white-color);
     .hero-blue {
         display: flex;
         flex-direction: column;
         justify-content: center;
         flex: 1;
-        background-color: var(--primary-color-100);
+        background-color: var(--secondary-color);
         border-radius: var(--border-radius-xxxl);
         padding: 30px;
         .call-to-action {
@@ -250,7 +251,7 @@ h1 {
         align-items: flex-end;
         flex: 1;
         background: rgb(2,0,36);
-background: linear-gradient(0deg, rgba(2,0,36,1) 18%, rgba(255,218,75,1) 40%);
+background: linear-gradient(0deg, rgba(2,0,36,1) 18%, rgba(10, 108, 189,1) 40%);
         border-radius: var(--border-radius-xxxl);
         padding: 30px 30px 0 30px;
 
@@ -302,12 +303,16 @@ h2 {
 
 .skills {
     .holder-blue {
-        background-color: var(--primary-color-100);
+        background-color: var(--secondary-color);
         border-radius: var(--border-radius-xxxl);
         padding: 30px;
         display: flex;
+        color: var(--white-color);
         .left-column {
             flex: 1;
+            h3 {
+                color: var(--white-color);
+            }
             ul {
                 list-style: none;
                 gap: 10px;
@@ -325,6 +330,9 @@ h2 {
     
         .right-column {
             flex: 1;
+            h3{
+                color: var(--white-color);
+            }
             p {
                 margin-top: 20px;
             }
