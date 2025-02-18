@@ -251,7 +251,7 @@ h1 {
         align-items: flex-end;
         flex: 1;
         background: rgb(2,0,36);
-background: linear-gradient(0deg, rgba(2,0,36,1) 18%, rgba(10, 108, 189,1) 40%);
+background: linear-gradient(0deg, rgba(2,0,36,1) 18%, rgba(9, 131, 237,1) 40%);
         border-radius: var(--border-radius-xxxl);
         padding: 30px 30px 0 30px;
 
