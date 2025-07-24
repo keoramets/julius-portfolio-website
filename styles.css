@@ -354,16 +354,20 @@ h2 {
             margin-top: 20px;
             margin-bottom: 10px;
             font-size: var(--font-size-lg);
+            text-align: center;
             }
         div {
             font-weight: 600;
             margin-bottom: 5px;
             color: var(--base-800);
             font-size: var(--font-size-sm);
+            text-align: center;
+            color: #0983ed;
             }
         p {
             margin-bottom: 10px;
             font-size: var(--font-size-sm);
+            text-align: center;
             }
         }
         figure {
