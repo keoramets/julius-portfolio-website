@@ -343,13 +343,13 @@ h2 {
 
 .work-experience {
     .jobs {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 per row */
         gap: 30px;
         article {
-            background-color: var(--secondary-color-100); 
+            background-color: var(--secondary-color-100);
             padding: 30px;
             border-radius: 30px;
-            flex: 1;
         h3 {
             margin-top: 20px;
             margin-bottom: 10px;
@@ -607,7 +607,7 @@ h2 {
 
     .work-experience {
         .jobs {
-            flex-direction: column;
+            grid-template-columns: repeat(2, 1fr); /* tablets */
         }
     }
 
@@ -703,4 +703,10 @@ h2 {
         width: 48px;
         height: 48px;
     }
+}
+
+@media (max-width: 640px) {
+  .work-experience .jobs {
+    grid-template-columns: 1fr; /* mobile */
+  }
 }
