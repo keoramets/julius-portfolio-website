@@ -342,8 +342,150 @@
           </article>
         </div>
       </section>
+      <section class="projects container" id="projects">
+        <h2>
+          <small>Featured</small>
+          Projects
+        </h2>
 
-      <section id="projects" class="bento container">
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Card 1 -->
+          <article class="project-card" data-project="keytracking" tabindex="0">
+            <div class="project-thumb">
+              <img
+                src="./images/projects/keytracking/cover.png"
+                alt="Key Tracking System"
+              />
+            </div>
+
+            <div class="project-meta">
+              <h3>Key Tracking System</h3>
+              <p class="project-company">Indianapolis Airport Authority</p>
+              <p class="project-desc">
+                Full-stack web app to track issued keys, status, assignments,
+                and history.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">ASP.NET MVC</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">SSMS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card" data-project="ngroup-ui" tabindex="0">
+            <div class="project-thumb">
+              <img
+                src="./images/projects/ngroup/cover.png"
+                alt="Simulation UI"
+              />
+            </div>
+
+            <div class="project-meta">
+              <h3>Simulation Dashboard UI</h3>
+              <p class="project-company">nGroup</p>
+              <p class="project-desc">
+                Frontend + Node/Express server to visualize simulation outputs
+                and workflows.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Node</span>
+                <span class="tag">Express</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 (A Trophy Business) -->
+          <article
+            class="project-card"
+            data-project="a-trophy-business"
+            tabindex="0"
+          >
+            <div class="project-thumb">
+              <img
+                src="./images/projects/trophy/cover.png"
+                alt="A Trophy Business Website"
+              />
+            </div>
+
+            <div class="project-meta">
+              <h3>A Trophy Business</h3>
+              <p class="project-company">A Trophy Business</p>
+              <p class="project-desc">
+                Responsive portfolio with grid sections, modals, and clean UI
+                layout.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Overlay / Modal -->
+      <div class="project-modal" id="projectModal" aria-hidden="true">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+
+        <div
+          class="modal-panel"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Project details"
+        >
+          <button class="modal-close" id="modalClose" aria-label="Close">
+            ×
+          </button>
+
+          <div class="modal-body">
+            <!-- Left: slideshow -->
+            <div class="modal-left">
+              <div class="slideshow">
+                <button
+                  class="slide-btn prev"
+                  id="prevSlide"
+                  aria-label="Previous image"
+                >
+                  ‹
+                </button>
+
+                <img id="slideImage" src="" alt="Project screenshot" />
+
+                <button
+                  class="slide-btn next"
+                  id="nextSlide"
+                  aria-label="Next image"
+                >
+                  ›
+                </button>
+              </div>
+
+              <div class="slide-dots" id="slideDots"></div>
+            </div>
+
+            <!-- Right: details -->
+            <div class="modal-right">
+              <h3 class="modal-title" id="modalTitle"></h3>
+              <p class="modal-subtitle" id="modalCompany"></p>
+
+              <p class="modal-description" id="modalDescription"></p>
+
+              <div class="modal-tags" id="modalTags"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <section id="projects" class="bento container">
         <h2>
           <small>Recent</small>
           Completed Projects
@@ -381,9 +523,9 @@
             <img src="./images/home.png" alt="Home" width="100%" />
           </a>
         </div>
-      </section>
+      </section> -->
 
-      <section id="chat-bot" class="chatbot container">
+      <!-- <section id="chat-bot" class="chatbot container">
         <h2>
           <small>Talk to me</small>
         </h2>
@@ -428,7 +570,28 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
+      <footer class="site-footer">
+        <div class="footer-container container">
+          <div class="footer-left">
+            <h3>Nyasha Choga</h3>
+            <p>Software Engineer · Full-Stack Developer</p>
+          </div>
+
+          <div class="footer-center">
+            <nav class="footer-nav">
+              <a href="#projects">Projects</a>
+              <a href="#experience">Experience</a>
+              <a href="#contact">Contact</a>
+            </nav>
+          </div>
+
+          <div class="footer-right">
+            <a href="mailto:choganyasha7@gmail.com">choganyasha7@gmail.com</a>
+            <p>© <span id="year"></span> All rights reserved</p>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script src="./scripts.js"></script>
