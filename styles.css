@@ -19,6 +19,7 @@
         --base-800: #384047;
         --white-color: #fff;
         --black-color: #000;
+        --blue-color: #0A66C2;
 
 
 
@@ -165,6 +166,14 @@ nav {
     }
     &.white {
         background-color: var(--white-color);
+        color: var(--base-800);
+        &:hover {
+            background-color: var(--base-100);
+            color: var(--primary-color);
+        }
+    }
+         &.blue {
+        background-color: var(--blue-color);
         color: var(--base-800);
         &:hover {
             background-color: var(--base-100);
