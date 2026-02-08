@@ -175,10 +175,10 @@ nav {
     }
          &.blue {
         background-color: var(--blue-color);
-        color: var(--base-800);
+        color: var(--white-color);
         &:hover {
             background-color: var(--tertiary-color-200);
-            color: var(--primary-color);
+            color: var(--white-color);
         }
     }
 
