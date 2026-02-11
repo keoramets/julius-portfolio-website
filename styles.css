@@ -13,12 +13,14 @@
         --secondary-color: #0a6cbd;
         --secondary-color-100: #0b89c318;;
         --secondary-color-800: #8b6f00;
+        --tertiary-color-200: #22A4F1;
         --base: #555;
         --base-100: #f1f1f1;
         --base-400: #555;
         --base-800: #384047;
         --white-color: #fff;
         --black-color: #000;
+        --blue-color: #0A66C2;
 
 
 
@@ -169,6 +171,14 @@ nav {
         &:hover {
             background-color: var(--base-100);
             color: var(--primary-color);
+        }
+    }
+         &.blue {
+        background-color: var(--blue-color);
+        color: var(--white-color);
+        &:hover {
+            background-color: var(--tertiary-color-200);
+            color: var(--white-color);
         }
     }
 
